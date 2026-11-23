@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rescate de Koalas | Servicios Unidos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="servicio1.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Servicios Unidos</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Inicio</a>
+      <a href="servicio1.html" class="active">Rescate de Koalas</a>
+      <a href="servicio2.html">Delivery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-koala">
+      <h1>🐨 Rescate de Koalas</h1>
+      <p>Cada koala cuenta. Rescatamos, curamos y devolvemos a su hogar a koalas en peligro.</p>
+    </section>
+
+    <section class="contenido">
+      <h2>¿Qué hacemos?</h2>
+      <div class="pasos">
+        <div class="paso">
+          <span>1</span>
+          <h3>Rescate</h3>
+          <p>Nuestro equipo acude a zonas de incendio, carreteras y áreas deforestadas para recuperar koalas heridos o huérfanos.</p>
+        </div>
+        <div class="paso">
+          <span>2</span>
+          <h3>Rehabilitación</h3>
+          <p>Veterinarios especializados tratan quemaduras, fracturas e infecciones, y cuidan a las crías hasta que pueden valerse por sí mismas.</p>
+        </div>
+        <div class="paso">
+          <span>3</span>
+          <h3>Liberación</h3>
+          <p>Una vez recuperados, los koalas regresan a bosques de eucalipto protegidos y monitoreados.</p>
+        </div>
+      </div>
+
+      <h2>Nuestro impacto</h2>
+      <div class="estadisticas">
+        <div><strong class="contador" data-meta="1250">0</strong><p>Koalas rescatados</p></div>
+        <div><strong class="contador" data-meta="980">0</strong><p>Koalas liberados</p></div>
+        <div><strong class="contador" data-meta="45">0</strong><p>Voluntarios activos</p></div>
+      </div>
+
+      <h2>¿Encontraste un koala en peligro?</h2>
+      <form class="formulario" id="formKoala">
+        <input type="text" id="ubicacion" placeholder="Ubicación del koala" required>
+        <textarea id="estado" placeholder="Describe su estado (herido, solo, en la carretera...)" required></textarea>
+        <input type="tel" id="telefono" placeholder="Tu teléfono de contacto" required>
+        <button type="submit" class="btn">Reportar rescate</button>
+        <p class="mensaje" id="mensajeKoala"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Servicios Unidos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="servicio1.js"></script>
+</body>
+</html>

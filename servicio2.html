@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery | Servicios Unidos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="servicio2.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Servicios Unidos</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Inicio</a>
+      <a href="servicio1.html">Rescate de Koalas</a>
+      <a href="servicio2.html" class="active">Delivery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-delivery">
+      <h1>🛵 Delivery</h1>
+      <p>Lo que necesitas, en la puerta de tu casa. Rápido, seguro y al mejor precio.</p>
+    </section>
+
+    <section class="contenido-delivery">
+      <h2>¿Qué llevamos?</h2>
+      <div class="categorias">
+        <div class="categoria">🍔<h3>Comida</h3><p>De tus restaurantes favoritos, caliente y a tiempo.</p></div>
+        <div class="categoria">🛒<h3>Supermercado</h3><p>Hacemos tus compras y te las llevamos.</p></div>
+        <div class="categoria">💊<h3>Farmacia</h3><p>Medicamentos y artículos de cuidado personal.</p></div>
+        <div class="categoria">📦<h3>Paquetes</h3><p>Envíos de documentos y paquetes dentro de la ciudad.</p></div>
+      </div>
+
+      <h2>Calcula el costo de tu envío</h2>
+      <form class="cotizador" id="formDelivery">
+        <label for="tipo">Tipo de pedido</label>
+        <select id="tipo">
+          <option value="1.5">Comida</option>
+          <option value="2">Supermercado</option>
+          <option value="1.5">Farmacia</option>
+          <option value="2.5">Paquete</option>
+        </select>
+
+        <label for="distancia">Distancia (km)</label>
+        <input type="number" id="distancia" min="1" max="30" value="3" required>
+
+        <label class="check">
+          <input type="checkbox" id="express"> Envío express (+$2.00)
+        </label>
+
+        <button type="submit" class="btn">Calcular</button>
+        <p class="resultado" id="resultado"></p>
+      </form>
+
+      <h2>Horario de atención</h2>
+      <p class="horario">Lunes a domingo · 8:00 a 23:00</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Servicios Unidos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="servicio2.js"></script>
+</body>
+</html>

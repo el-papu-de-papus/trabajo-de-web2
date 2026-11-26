@@ -3,7 +3,7 @@ document.querySelectorAll(".contador").forEach((contador) => {
   const meta = Number(contador.dataset.meta);
   const incremento = Math.ceil(meta / 60);
   let actual = 0;
-
+/// cambios
   const intervalo = setInterval(() => {
     actual += incremento;
     if (actual >= meta) {
